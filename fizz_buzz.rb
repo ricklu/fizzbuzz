@@ -7,6 +7,7 @@ class FizzBuzz
     return fizz_buzz_number(number)
   end
 
+  private
   def fizz_buzz_array(number)
     result = ''
     number.each do |x|
@@ -15,7 +16,6 @@ class FizzBuzz
     return result
   end
 
-  private
   def fizz_buzz_number(number)
     if !is_input_valid?(number)
       return 'Invalid input. Must be an integer or integer array.'
